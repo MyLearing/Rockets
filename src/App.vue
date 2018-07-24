@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav-bar></nav-bar>
-    <rockets class="container"></rockets>
+    <rockets class="container mt-2"></rockets>
   </div>
 </template>
 <script>

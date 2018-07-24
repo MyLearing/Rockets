@@ -28,8 +28,26 @@
   </section>
 </template>
 <script>
+function getEmptyRocket () {
+  return {
+    name: '',
+    description: '',
+    country: '',
+    image: ''
+  }
+}
 export default {
-
+  data: () => ({
+    showForm: false,
+    rocket: getEmptyRocket()
+  }),
+  methods: {
+    onAddRocket () {
+      this.$store.commit('addRocket', this.rocket)
+      this.rocket = getEmptyRocket()
+      this.showForm = false
+    }
+  }
 }
 </script>
 
