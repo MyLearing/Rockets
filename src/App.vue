@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav-bar></nav-bar>
+    <rockets class="container"></rockets>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from '@/components/NavBar.vue'
+import Rockets from '@/views/Rockets.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Rockets,
+    NavBar
   }
 }
 </script>

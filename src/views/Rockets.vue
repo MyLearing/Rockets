@@ -1,10 +1,16 @@
 <template>
-    <h1>Hello Vue</h1>
+    <section>
+        <new-rocket-form></new-rocket-form>
+    </section>
 </template>
 
 <script>
-export default {
+import NewRocketForm from '@/components/NewRocketForm'
 
+export default {
+  components: {
+    NewRocketForm
+  }
 }
 </script>
 
